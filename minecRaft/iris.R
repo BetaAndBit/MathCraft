@@ -22,7 +22,7 @@ writeLines(paste0("world.setBlocks(-50,",baseline+1,",-50,150,",baseline+50,",15
 
 for (i in 1:nrow(iris)) {
   addBlock(10*iris[i,"Sepal.Length"],
-           baseline + 2 + 10*(iris[i,"Sepal.Width"] - min(iris[,"Sepal.Width"]),
+           baseline + 2 + 10*(iris[i,"Sepal.Width"] - min(iris[,"Sepal.Width"])),
            10*iris[i,"Petal.Length"],
            c(41,42,45)[as.numeric(iris[i,"Species"])], 
            conn)
