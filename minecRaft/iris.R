@@ -1,5 +1,5 @@
 #
-# A usefull function
+# A useful function
 
 addBlock <- function(x, y, z, b, conn) {
   writeLines(paste0("world.setBlock(",round(x),",",round(y),",",round(z),",",round(b),")"), conn)
